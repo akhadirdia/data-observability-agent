@@ -1,0 +1,23 @@
+# Lignage déclaratif des tables surveillées.
+# Pour chaque table : upstream = sources, downstream = consommateurs.
+#
+# Exemple :
+# orders:
+#   upstream:
+#     - raw_events
+#     - customers
+#   downstream:
+#     - revenue_daily
+#     - kpi_dashboard
+
+orders:
+  upstream:
+    - raw_events
+  downstream:
+    - revenue_daily
+
+products:
+  upstream: []
+  downstream:
+    - orders
+    - inventory_report

@@ -1,0 +1,22 @@
+version: "3.9"
+
+# Aucun service requis en développement — SQLite est utilisé localement.
+# Ce fichier est un point d'extension pour ajouter une vraie DB de test
+# (ex: Postgres) si nécessaire.
+
+services:
+  postgres-test:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: obs_user
+      POSTGRES_PASSWORD: obs_pass
+      POSTGRES_DB: obs_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    profiles:
+      - postgres
+
+volumes:
+  postgres_data:
