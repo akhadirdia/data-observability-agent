@@ -1,4 +1,6 @@
 .env
+CLAUDE.md
+cahierdecharge.md
 __pycache__/
 *.py[cod]
 *.db
