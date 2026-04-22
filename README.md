@@ -9,11 +9,13 @@
 
 ---
 
+<!--
 ## Demo
 
 🚧 Streamlit deployment in progress — link will be updated here.
 
-<!-- ![Demo GIF](docs/demo.gif) -->
+![Demo GIF](docs/demo.gif)
+-->
 
 ---
 
